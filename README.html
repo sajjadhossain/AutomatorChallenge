@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>README</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+<style type="text/css">
+/**
+ * prism.js Dark theme for JavaScript, CSS and HTML
+ * Based on the slides of the talk “/Reg(exp){2}lained/”
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: white;
+	background: none;
+	text-shadow: 0 -.1em .2em black;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+	background: hsl(30, 20%, 25%);
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border: .3em solid hsl(30, 20%, 40%);
+	border-radius: .5em;
+	box-shadow: 1px 1px .5em black inset;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .15em .2em .05em;
+	border-radius: .3em;
+	border: .13em solid hsl(30, 20%, 40%);
+	box-shadow: 1px 1px .3em -.1em black inset;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: hsl(30, 20%, 50%);
+}
+
+.token.punctuation {
+	opacity: .7;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+	color: hsl(350, 40%, 70%);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: hsl(75, 70%, 60%);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: hsl(40, 90%, 60%);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: hsl(350, 40%, 70%);
+}
+
+.token.regex,
+.token.important {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.deleted {
+	color: red;
+}
+</style>
+
+<style type="text/css">
+pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+	position: relative;
+}
+
+.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	font-size: 100%;
+	left: -3.8em;
+	width: 3em; /* works for line-numbers below 1000 lines */
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+}
+
+	.line-numbers-rows > span {
+		pointer-events: none;
+		display: block;
+		counter-increment: linenumber;
+	}
+
+		.line-numbers-rows > span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: 0.8em;
+			text-align: right;
+		}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">LearnVest</h1>
+
+<ol>
+<li><a href="#Risks">Task 1 - Risk Analysis</a></li>
+<li><a href="#Data">Task 2 - Data Analysis</a></li>
+<li><a href="#TestCases">Task 3 - Test Cases</a></li>
+<li><a href="#IssueTriaging">Task 4 - Issue Triaging</a></li>
+<li><a href="#Automating">Task 4 - Automation</a></li>
+</ol>
+
+<h2 id="toc_1">Scenario</h2>
+
+<p>You are given the task to test out a new area of the website that gives the user a snapshot of important information once they login.  You are given both an image of the design and acceptance criteria / requirements. Please review them below:</p>
+
+<p><img src="./account.png" alt=""></p>
+
+<h3 id="toc_2">Acceptance Criteria / Requirements</h3>
+
+<p>Users should see a welcome module in which they are presented with the following information:</p>
+
+<ol>
+<li>A welcome message which includes their first name</li>
+<li>Information about the last time they logged in</li>
+<li>Number of bank/credit card transactions they have which need to be manually categorized by the user. 
+
+<ul>
+<li>Categories are normally assigned automatically via an algorithm.<br></li>
+<li>Example category might be rent, gas, restaurants, etc.<br></li>
+<li>In the case where it can’t automatically be categorized, it will be <code>unfoldered</code>.</li>
+<li>Clicking on this link takes you to a transactions screen</li>
+</ul></li>
+<li>The name of your planner</li>
+<li>How much money you are allowed to spend every week</li>
+</ol>
+
+<h3 id="toc_3"><div id="Risks">Task 1</div></h3>
+
+<p>Write a list of questions or uncertainties you may have that you would ask a designer or stakeholder concerning the image or acceptance criteria/requirements.</p>
+
+<h3 id="toc_4">Task 1 - Response</h3>
+
+<p>So I took the liberty of categorizing my list of questions or uncertainties.<br>
+For each within, <code>DES</code> = designer, <code>PRO</code> = product, <code>STA</code> = stakeholders.</p>
+
+<h4 id="toc_5">Best Practices</h4>
+
+<ol>
+<li>Acceptance criteria should be documented in the form of user stories. See <a href="./components/stories/Profile_Overview_Component_FSD.md">Profile<u>Overview</u>Component_FSD.md</a> <code>PRO</code></li>
+<li>Design specifications should be contained to views or viewports where applicable.
+
+<ul>
+<li>In the context of this, let&#39;s call it <code>Profile Overview Component</code>, it either is contained within a parent element, like a menu or a modal or view of its own. See <a href="./components/design/Profile_Overview_Component_Design.png">Profile<u>Overview</u>Component_Design.png</a>.</li>
+<li>Also the design should state the view port it is being enhanced for. For the example above the viewport it is optimized for is <code>1024X768</code></li>
+</ul></li>
+<li>Design should be done mobile first. <code>PRO</code> &amp; <code>DES</code></li>
+<li>Design should reference a pattern library for components. <code>PRO</code> &amp; <code>DES</code></li>
+<li>Design should also reference a style guide. <code>PRO</code> &amp; <code>DES</code>
+
+<ul>
+<li>Style guides usually reference fonts used, </li>
+<li>sizes for optimization across device and web kits,</li>
+<li>taglines and marketing goals to be teargeted.</li>
+</ul></li>
+<li>Specifications should also reference Compatibility and Boundary <code>PRO</code></li>
+<li>Design can be optimized using tools like <a href="https://www.invisionapp.com/">https://www.invisionapp.com/</a> and the like. <code>DES</code></li>
+</ol>
+
+<h4 id="toc_6">User Experience</h4>
+
+<ol>
+<li>It isn&#39;t clear as to whether or not <img src="./info.png" alt=""> is a button or a modal on hover displaying information. It is also used twice in separate locations, where one is documented to be a link to another view. <code>DES</code></li>
+<li>Buttons and links should be clearly defined for the user as call to actions. <code>DES</code></li>
+<li>Unclear as to whether <a href="http://www.degordian.com/education/blog/best-practice-for-responsive-typography/">modular scale</a> or <a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">responsive font size practices</a> are used. <code>DES</code></li>
+<li>Unclear as to whether <a href="http://atomicdesign.bradfrost.com/">atomic design</a> approaches are practiced. <code>DES</code></li>
+</ol>
+
+<h4 id="toc_7">Test Scope</h4>
+
+<ol>
+<li>Which view(s) is (are) this component a child of?</li>
+<li>Does the test plan for this component extend itself to the modules that it includes? <code>STA</code>
+
+<ul>
+<li>For example, <code>Unfoldered Transactions Component</code>. </li>
+<li>Does this test plan include testing it against an acceptance criteria of its&#39; own?</li>
+<li>If so, are there <code>epics</code> &amp; <code>stories</code> for them? (see example: <a href="./components/stories/Profile_Overview_Component_FSD.md">Profile<u>Overview</u>Component_FSD.md</a>)</li>
+</ul></li>
+<li>Is this <code>Profile Overview Component</code> static or refreshed on a cron or a <q>last-update</q> basis? <code>STA</code></li>
+<li>Are all modules for this component functional? <code>STA</code> 
+
+<ul>
+<li>For example the contact via <code>Get in touch</code>. </li>
+<li>Given for <code>1</code>, it is in the scope of this test. </li>
+</ul></li>
+<li>Is this component a priority feature for the <code>smoke</code> suite? <code>STA</code></li>
+<li>Should it also be in the the <code>regression</code> suite? <code>STA</code></li>
+<li>Are there any known caveats or issues to take in to consideration? <code>STA</code></li>
+</ol>
+
+<h3 id="toc_8"><div id="Data">Task 2</div></h3>
+
+<p>Write a list of data or users in a certain state that you may need to properly test this.</p>
+
+<h3 id="toc_9">Task 2 - Response</h3>
+
+<p>In <a href="./components/stories/Profile_Overview_Component_FSD.md">Profile<u>Overview</u>Component_FSD.md</a>, the user stories contain some of the variables, parameters and states that I need at minimum to test these stories.</p>
+
+<p>They look like:</p>
+
+<div><pre class="line-numbers"><code class="language-cucumber">Scenario: I want to view the last time I logged in
+Given I am on My Profile Overview
+And I am `$(isLoggedIn)`
+Then I should see `Last Login`
+And I should see `$(lastLoggedIn)`</code></pre></div>
+
+<h4 id="toc_10">Test Data and States</h4>
+
+<ol>
+<li>User types:
+
+<ul>
+<li>Ideal User
+
+<ul>
+<li>This user meets all required data points,</li>
+<li>including the optional data points,</li>
+<li>ideally a user in the system with reoccurring transactions.</li>
+</ul></li>
+<li>Secondary Ideal User 
+
+<ul>
+<li>This user meets all required data points,</li>
+<li>missing <em>n</em> optional data points,</li>
+<li>inconsistent transaction history.</li>
+</ul></li>
+<li>Invalid User
+
+<ul>
+<li>A user that is either not verified or doesn&#39;t meet member requirements,</li>
+<li>therefore, returns <code>Logged Out</code> or <code>Verification Required</code>,</li>
+<li>user could also not exist in the system.</li>
+</ul></li>
+</ul></li>
+<li>States for each user type, except invalid:
+
+<ul>
+<li>A user with multiple integrations and ongoing history, no <code>unfoldered transactions</code>.</li>
+<li>A user less than 1 integration and no ongoing history, less than 2 <code>unfoldered transactions</code>.</li>
+<li>A user less than 1 integration and ongoing history, with multiple <code>unfoldered transactions</code>.</li>
+<li>A user with no planner.</li>
+<li>A user with a planner with no certifications.</li>
+<li>A user with an unusually old <code>Last Login</code> date.</li>
+<li>A <code>new</code> user.</li>
+<li>A user with a high <code>Weekly Spending Target</code>.</li>
+<li>A user with a medium <code>Weekly Spending Target</code>.</li>
+<li>A user with a low <code>Weekly Spending Target</code>.</li>
+<li>A user with no current generated <code>Weekly Spending Target</code>.</li>
+<li>Logged out user.</li>
+<li>Logged in user.</li>
+<li>User in changed password state.</li>
+</ul></li>
+<li>Views and states applicable:
+
+<ul>
+<li>For example, <code>Settings</code> view.</li>
+</ul></li>
+</ol>
+
+<h3 id="toc_11"><div id="TestCases">Task 3</div></h3>
+
+<p>Write a list of high-level test scenarios that you can think of based only on the design and acceptance criteria you are given. After you list them out, number them in terms of priority (<code>1</code> - must test, <code>2</code> - should test, <code>3</code> - test only if there is time).</p>
+
+<h3 id="toc_12">Task 3 - Response</h3>
+
+<p>See the stories here: <a href="./components/stories/Profile_Overview_Component_FSD.md">Profile<u>Overview</u>Component_FSD.md</a>.</p>
+
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Scenario</th>
+<th>Reason</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>I want to use my profile overview</td>
+<td>This is the epic, parent for all children that follows.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>I want a customized welcome message</td>
+<td>Seems secondary to <code>Unfoldered Transactions</code> &amp; <code>Weekly Spending Target</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>I want to view the last time I logged in</td>
+<td>Seems secondary to <code>Unfoldered Transactions</code> &amp; <code>Weekly Spending Target</code></td>
+</tr>
+<tr>
+<td>1</td>
+<td>I want to view my notifications</td>
+<td>This module is the parent for <code>Unfoldered Transactions</code>.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>I want to view the number of Unfoldered Transactions I have</td>
+<td>Seems that this is a main driver for this service, tied closer to marketing goals.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>I want to view my planner</td>
+<td>Seems that this is also a main driver for this service, tied closer to marketing goals.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>I want to view my Weekly Spending Target</td>
+<td>Seems that this is also a main driver for this service, tied closer to marketing goals.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_13"><div id="IssueTriaging">Task 4</div></h3>
+
+<p>Imagine that you find a defect while testing the above. Write a sample defect report.</p>
+
+<h3 id="toc_14">Task 4 - Response</h3>
+
+<p>I actually <a href="http://blog.sajjad.nyc/2015/11/11/The-Art-of-Reproducing-Bugs.html">wrote about this</a> a while ago. Here are the snippets that apply:</p>
+
+<ol>
+<li>Where the issue was observed?</li>
+<li>What site was this on?</li>
+<li>What browser or device were you using? </li>
+<li>What are the steps to reproduce the issue? </li>
+<li>What was the expected result? </li>
+<li>What was the actual result? </li>
+<li>Other things that you should include in your bug ticket:
+
+<ol>
+<li>Any specification documents relating to the functionality. This helps provide a trail and additional information when working on the issue.</li>
+<li>Screenshots or video of the issue. Sometimes a picture is worth a thousand words, and a video is worth exponentially more than that. These can provide insight into the issue that a written description never could.</li>
+</ol></li>
+</ol>
+
+<h4 id="toc_15">TICKET-123</h4>
+
+<p><strong>Summary:</strong> Clicking <code>Unfoldered Transactions</code> redirects user to <code>/404</code></p>
+
+<p><strong>Environment:</strong> Environment Agnostic, issue discovered on Chrome 39.x.x, <a href="http://example.com/Profile">http://example.com/Profile</a>, Logged in as <code>testUser_09</code>/<code>passwrd0</code></p>
+
+<p><strong>Acceptance Criteria:</strong> <a href="">Link to JIRA, Trello, etc.</a></p>
+
+<p><strong>Description:</strong><br>
+Steps to reproduce:</p>
+
+<ol>
+<li>Navigate to <a href="http://example.com">http://example.com</a></li>
+<li>Log in as <code>testUser_09</code></li>
+<li>Press <code>Profile</code> from navigation bar</li>
+<li>Press <code>Unfoldered Transactions</code></li>
+<li>Notice user is redirected to <code>/404</code></li>
+<li><strong>Expected:</strong> to be on <code>/Profile</code></li>
+</ol>
+
+<h3 id="toc_16"><div id="Automating">Task 5</div></h3>
+
+<p>What scenarios would you consider valid for automation? Why?</p>
+
+<h3 id="toc_17">Task 5 - Response</h3>
+
+<p>This component is small enough to be able to be quickly automated, at least for the <code>green</code> or <code>valid paths</code>. The paths of which do not test error handling or edge cases. However, they should be noted so they can be automated later. Automating based on a priority scale is important too.</p>
+
+<p>Given that the concerns regarding the test scope are addressed and all components are expected to be tested apart of this test plan, then automating around <code>Unfoldered Transactions</code> &amp; <code>Weekly Spending Target</code> components is a good strategy.</p>
+
+<p>Take each story in <a href="./components/stories/Profile_Overview_Component_FSD.md">Profile<u>Overview</u>Component_FSD.md</a>, flesh out scenarios for each test type, or scaffold scenarios under each type, for the types applied.</p>
+
+<ol>
+<li>Black-Box</li>
+<li>White-Box</li>
+<li>Unit</li>
+<li>Incremental Integration</li>
+<li>Integration</li>
+<li>Functional</li>
+<li>System</li>
+<li>End-to-End</li>
+<li>Sanity</li>
+<li>Regression</li>
+<li>Acceptance, UAT</li>
+<li>Load</li>
+<li>Stress</li>
+<li>Performance</li>
+<li>Usability</li>
+<li>Installation</li>
+<li>Recovery</li>
+<li>Security</li>
+<li>Compatibility</li>
+<li>Comparison</li>
+<li>Alpha</li>
+<li>Beta</li>
+</ol>
+
+<p>After mapping epics, stories and scenarios to suites to test types, a test plan and schedule should be drafted.</p>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+<script type="text/javascript">
+!function(){"undefined"!=typeof self&&self.Prism&&self.document&&Prism.hooks.add("complete",function(e){if(e.code){var t=e.element.parentNode,s=/\s*\bline-numbers\b\s*/;if(t&&/pre/i.test(t.nodeName)&&(s.test(t.className)||s.test(e.element.className))&&!e.element.querySelector(".line-numbers-rows")){s.test(e.element.className)&&(e.element.className=e.element.className.replace(s,"")),s.test(t.className)||(t.className+=" line-numbers");var n,a=e.code.match(/\n(?!$)/g),l=a?a.length+1:1,m=new Array(l+1);m=m.join("<span></span>"),n=document.createElement("span"),n.className="line-numbers-rows",n.innerHTML=m,t.hasAttribute("data-start")&&(t.style.counterReset="linenumber "+(parseInt(t.getAttribute("data-start"),10)-1)),e.element.appendChild(n)}}})}();
+</script>
+
+
+</body>
+
+</html>

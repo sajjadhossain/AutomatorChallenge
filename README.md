@@ -176,7 +176,7 @@ Given that the concerns regarding the test scope are addressed and all component
 Take each story in [Profile_Overview_Component_FSD.md](./components/stories/Profile_Overview_Component_FSD.md), flesh out scenarios for each test type, or scaffold scenarios under each type, for the types applied.
 
 1. Black-Box
-1. White -Box
+1. White-Box
 1. Unit
 1. Incremental Integration
 1. Integration
