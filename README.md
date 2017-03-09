@@ -42,9 +42,9 @@ For each within, `DES` = designer, `PRO` = product, `STA` = stakeholders.
 1. Design should also reference a style guide. `PRO` & `DES`
     - Style guides usually reference fonts used, 
     - sizes for optimization across device and web kits,
-    - taglines and marketing goals to be teargeted.
+    - taglines and marketing goals to be targeted.
 1. Specifications should also reference Compatibility and Boundary `PRO`
-1. Design can be optimized using tools like [https://www.invisionapp.com/](https://www.invisionapp.com/) and the like. `DES`
+1. Presentation can be optimized using tools like [https://www.invisionapp.com/](https://www.invisionapp.com/) and the like. `DES`
 
 #### User Experience
 1. It isn't clear as to whether or not ![](./info.png) is a button or a modal on hover displaying information. It is also used twice in separate locations, where one is documented to be a link to another view. `DES`
@@ -99,7 +99,7 @@ And I should see `$(lastLoggedIn)`
         - user could also not exist in the system.
 1. States for each user type, except invalid:
     - A user with multiple integrations and ongoing history, no `unfoldered transactions`.
-    - A user less than 1 integration and no ongoing history, less than 2 `unfoldered transactions`.
+    - A user with 1 integration and no ongoing history, less than 2 `unfoldered transactions`.
     - A user less than 1 integration and ongoing history, with multiple `unfoldered transactions`.
     - A user with no planner.
     - A user with a planner with no certifications.
@@ -198,4 +198,4 @@ Take each story in [Profile_Overview_Component_FSD.md](./components/stories/Prof
 1. Alpha
 1. Beta
 
-After mapping epics, stories and scenarios to suites to test types, a test plan and schedule should be drafted.
+After mapping epics, stories and scenarios to suites and test types, a test plan and schedule should be drafted.
